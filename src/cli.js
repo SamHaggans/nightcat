@@ -1,17 +1,17 @@
 //const { spawn } = require("child_process");
-const readline = require("readline");
+//const readline = require("readline");
 const parser = require("./parse");
+//const { SSHProcess } = require("./client/ssh");
 
-const rl = readline.createInterface({
+/*const rl = readline.createInterface({
     input: process.stdin,
     output: process.stdout,
-});
+});*/
 
-function main() {
-    rl.question("What is your name? ", (name) => {
-        console.log(`Hello from Nightcat, ${name}!`);
-        console.log(`Nightcat was called with the following arguments: \r\n${parser.parse(process.argv)}`);
-    });
-};
+async function main() {
+    const command = parser.parse(process.argv);
+    console.log(command);
+    process.exit();
+}
 
 module.exports = { main };

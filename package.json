@@ -1,0 +1,31 @@
+{
+  "name": "nightcat",
+  "version": "0.0.1",
+  "description": "Simple server deployment and management library",
+  "main": "index.js",
+  "bin": {
+    "nightcat": "./index.js"
+  },
+  "scripts": {
+    "format": "prettier -w src && eslint src",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SamHaggans/nightcat.git"
+  },
+  "author": "SamHaggans",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SamHaggans/nightcat/issues"
+  },
+  "homepage": "https://github.com/SamHaggans/nightcat#readme",
+  "dependencies": {
+    "lodash": "^4.17.21",
+    "minimist": "^1.2.6"
+  },
+  "devDependencies": {
+    "eslint": "^8.14.0",
+    "prettier": "^2.6.2"
+  }
+}
